@@ -12,7 +12,7 @@ import folium
 
 
 #-------MAIN CONTENT-------#
-final_listings = pd.read_csv('/Users/alejandrovillanuevalledo/Documents/GitHub/Hong-Kong_project/CSV/final_listings.csv')
+final_listings = pd.read_csv('CSV/final_listings.csv')
 listings_per_host = final_listings.groupby('host_id').agg({'host_name': 'first', 'host_total_listings_count': 'first'}).reset_index()
 listings_per_host.drop(columns='host_id', inplace=True)
 num_columns = final_listings.select_dtypes(include=['number'])

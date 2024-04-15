@@ -27,3 +27,4 @@ geopandas
 chart-studio
 nltk
 kaggle
+folium

@@ -133,10 +133,10 @@ with tab4:
         
         col1, col2 = st.columns(2)
         with col1:
-            st.image('/Users/alejandrovillanuevalledo/Documents/GitHub/Hong-Kong_project/Img/prices_per_district.png', width=600)
+            st.image('Img/prices_per_district.png', width=600)
         
         with col2:
-            st.image('/Users/alejandrovillanuevalledo/Documents/GitHub/Hong-Kong_project/Img/prices_per_roomtype.png', width=600)
+            st.image('Img/prices_per_roomtype.png', width=600)
         
         st.markdown('')
         final_listings_sorted2 = final_listings.sort_values('accomodate_range')
@@ -151,7 +151,7 @@ with tab4:
 
 #-------TAB3 MAP--------#
 with tab3:
-    with open("/Users/alejandrovillanuevalledo/Documents/GitHub/Hong-Kong_project/html/map3.html", "r") as file:
+    with open("html/map3.html", "r") as file:
         html_code = file.read()
     st.components.v1.html(html_code, width=1300, height=600)
     
@@ -209,7 +209,7 @@ with tab5:
             st.markdown("<style>div[data-testid='stHorizontalBlock'] div{display: flex; justify-content: center;}</style>", unsafe_allow_html=True)
             st.dataframe(listings_per_host)
     with col2:
-        st.image('/Users/alejandrovillanuevalledo/Documents/GitHub/Hong-Kong_project/Img/listings_by_district.png', width=600)
+        st.image('Img/listings_by_district.png', width=600)
     
     #st.markdown('')
     #st.image('/Users/alejandrovillanuevalledo/Documents/GitHub/Hong-Kong_project/Img/price_by_district.png', width=None, use_column_width=True)

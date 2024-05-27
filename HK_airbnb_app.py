@@ -9,6 +9,7 @@ from PIL import Image
 import io 
 import geopandas as gp 
 import folium
+import streamlit.components.v1
 
 
 #-------MAIN CONTENT-------#

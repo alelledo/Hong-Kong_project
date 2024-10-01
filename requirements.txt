@@ -15,7 +15,7 @@ ortools
 
 # APIs y scripts
 wandb
-streamlit == 1.26.0
+streamlit == 1.37.0
 Flask
 gunicorn
 pyyaml
